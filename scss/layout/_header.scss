@@ -1,18 +1,47 @@
+@use "../abstracts";
+
 %flexItemsCenter {
     display: flex;
     align-items: center;
 }
 
 .header {
-    background: #eee;
+    background: var(--header-bg-color);
 }
 
 .top-bar {
     @extend %flexItemsCenter;
+
+    padding: 30px 0;
+
+    @include abstracts.breakpoint(lg) {
+        padding: 20px;
+    };
+
+    @include abstracts.breakpoint(sm) {
+        padding: 16px;
+    };
+
+    &__more {
+        display: none;
+
+        @include abstracts.breakpoint(lg) {
+            display: flex;
+        };
+    }
+
 }
 
 .navbar {
     margin-left: 144px;
+
+    @include abstracts.breakpoint(xl) {
+        margin-left: 50px;
+    };
+
+    @include abstracts.breakpoint(lg) {
+        display: none;
+    };
 
     &__list {
         @extend %flexItemsCenter;
@@ -39,19 +68,27 @@
 
     column-gap: 20px;
 
-    padding: 30px 0;
     margin-left: auto;
 
     &__group {
         @extend %flexItemsCenter;
 
-
         min-width: 50px;
         height: 50px;
 
         border-radius: 8px;
-        background: #fff;
-        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        background: var(--top-act-group-bg-color);
+        box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
+
+        @include abstracts.breakpoint(md) {
+            display: none;
+        }
+    }
+
+    &__group--single {
+        @include abstracts.breakpoint(lg) {
+            display: none;
+        };
     }
 
     &__group--single &__btn {
@@ -81,7 +118,7 @@
         width: 1px;
         height: 30px;
 
-        background-color: #ededf6;
+        background-color: var(--top-act-group-separate);
     }
 
     &__avatar {
