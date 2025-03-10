@@ -34,11 +34,13 @@
 
 .top-menu {
     --main-column-width: 292px;
+    --max-inner-height: calc(min(582px, 100vh - 158px) - 2 * var(--inner-padding));
+
     position: relative;
 
     &__main {
         width: var(--main-column-width);
-        height: calc(min(582px, 100vh - 158px) - 2 * var(--inner-padding));
+        height: var(--max-inner-height);
 
         border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
@@ -69,7 +71,7 @@
     &__icon-1 {
         width: 30px;
         height: 30px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     &__icon-2 {
@@ -100,7 +102,7 @@
     }
 
     &__item {
-        &:hover .sub-menu {
+        &--active .sub-menu {
             display: grid;
         }
 
@@ -110,10 +112,13 @@
 
     }
 
-    &__item:hover > &__link{
+    &__item:hover > &__link,
+    &__item--active > &__link{
         color: #0071DC;
         font-weight: 500;
     }
+
+
 
     &__link {
         display: block;
@@ -134,4 +139,16 @@
     padding-left: var(--inner-padding);
 
     overflow-y: auto;
+
+    &--not-main {
+        position: initial;
+        inset: initial;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        padding-left: 0;
+
+        height: var(--max-inner-height);
+    }
 }
