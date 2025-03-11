@@ -1,7 +1,7 @@
 <div class="container">
     <div class="top-bar">
         <!-- More -->
-        <button class="top-bar__more">
+        <button class="top-bar__more js-toggle d-none d-lg-block" toggle-target="#navbar">
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
         <!-- Logo -->
@@ -11,10 +11,14 @@
         </a>
 
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav id="navbar" class="navbar hide">
+            <button class="navbar__close-btn d-none d-lg-block js-toggle" toggle-target="#navbar">
+                <img src="./assets/icons/arrow-left.svg" alt="">
+            </button>
+
             <ul class="navbar__list js-dropdown-list">
                 <li class="navbar__item">
-                    <a href="" class="navbar__link">
+                    <a href="#!" class="navbar__link">
                         Departments
                         <img src="./assets/icons/arrow-down.svg" alt="" class="icon navbar__arrow" />
                     </a>
@@ -25,7 +29,7 @@
                                 <div class="top-menu__main">
                                     <!-- Menu column -->
                                     <div class="menu-column">
-                                        <div class="menu-column__icon">
+                                        <div class="menu-column__icon d-xl-none">
                                             <img
                                                 src="./assets/img/category/cate-1.1.svg"
                                                 alt=""
@@ -47,7 +51,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -102,7 +106,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -152,7 +156,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -235,7 +239,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -270,7 +274,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -338,7 +342,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -393,7 +397,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -443,7 +447,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -526,7 +530,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -561,7 +565,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -628,7 +632,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -683,7 +687,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -733,7 +737,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -816,7 +820,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -851,7 +855,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -920,7 +924,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -975,7 +979,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -1025,7 +1029,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -1108,7 +1112,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -1143,7 +1147,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -1210,7 +1214,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -1265,7 +1269,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -1315,7 +1319,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -1398,7 +1402,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -1433,7 +1437,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -1500,7 +1504,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -1555,7 +1559,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -1605,7 +1609,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -1688,7 +1692,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -1723,7 +1727,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -1790,7 +1794,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -1845,7 +1849,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -1895,7 +1899,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -1978,7 +1982,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -2013,7 +2017,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -2080,7 +2084,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -2135,7 +2139,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -2185,7 +2189,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -2268,7 +2272,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -2303,7 +2307,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -2370,7 +2374,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -2425,7 +2429,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -2475,7 +2479,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -2558,7 +2562,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -2593,7 +2597,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -2660,7 +2664,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -2715,7 +2719,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -2765,7 +2769,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -2848,7 +2852,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -2883,7 +2887,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -2950,7 +2954,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -3005,7 +3009,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -3055,7 +3059,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -3138,7 +3142,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -3173,7 +3177,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -3240,7 +3244,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -3295,7 +3299,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -3345,7 +3349,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -3428,7 +3432,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -3463,7 +3467,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -3530,7 +3534,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -3585,7 +3589,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -3635,7 +3639,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -3718,7 +3722,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -3753,7 +3757,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -3820,7 +3824,7 @@
                                                         <!-- Sub menu column 1 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-2.1.svg"
                                                                         alt=""
@@ -3875,7 +3879,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-4.1.svg"
                                                                         alt=""
@@ -3925,7 +3929,7 @@
                                                         <!-- Sub menu column 2 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-3.1.svg"
                                                                         alt=""
@@ -4008,7 +4012,7 @@
                                                         <!-- Sub menu column 3 -->
                                                         <div class="sub-menu__column">
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-5.1.svg"
                                                                         alt=""
@@ -4043,7 +4047,7 @@
                                                             </div>
 
                                                             <div class="menu-column">
-                                                                <div class="menu-column__icon">
+                                                                <div class="menu-column__icon d-xl-none">
                                                                     <img
                                                                         src="./assets/img/category/cate-6.1.svg"
                                                                         alt=""
@@ -4113,7 +4117,7 @@
                     </div>
                 </li>
                 <li class="navbar__item">
-                    <a href="" class="navbar__link">
+                    <a href="#!" class="navbar__link">
                         Grocery
                         <img src="./assets/icons/arrow-down.svg" alt="" class="icon navbar__arrow" />
                     </a>
@@ -4124,7 +4128,7 @@
                                     <!-- Sub menu column 1 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-2.1.svg"
                                                     alt=""
@@ -4167,7 +4171,7 @@
                                         </div>
 
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-4.1.svg"
                                                     alt=""
@@ -4205,7 +4209,7 @@
                                     <!-- Sub menu column 2 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-3.1.svg"
                                                     alt=""
@@ -4264,7 +4268,7 @@
                                     <!-- Sub menu column 3 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-5.1.svg"
                                                     alt=""
@@ -4293,7 +4297,7 @@
                                         </div>
 
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-6.1.svg"
                                                     alt=""
@@ -4346,7 +4350,7 @@
                                     <!-- Sub menu column 4 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-2.1.svg"
                                                     alt=""
@@ -4389,7 +4393,7 @@
                                         </div>
 
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-4.1.svg"
                                                     alt=""
@@ -4429,7 +4433,7 @@
                     </div>
                 </li>
                 <li class="navbar__item">
-                    <a href="" class="navbar__link">
+                    <a href="#!" class="navbar__link">
                         Beauty
                         <img src="./assets/icons/arrow-down.svg" alt="" class="icon navbar__arrow" />
                     </a>
@@ -4440,7 +4444,7 @@
                                     <!-- Sub menu column 1 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-2.1.svg"
                                                     alt=""
@@ -4483,7 +4487,7 @@
                                         </div>
 
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-4.1.svg"
                                                     alt=""
@@ -4521,7 +4525,7 @@
                                     <!-- Sub menu column 2 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-3.1.svg"
                                                     alt=""
@@ -4580,7 +4584,7 @@
                                     <!-- Sub menu column 3 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-5.1.svg"
                                                     alt=""
@@ -4609,7 +4613,7 @@
                                         </div>
 
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-6.1.svg"
                                                     alt=""
@@ -4662,7 +4666,7 @@
                                     <!-- Sub menu column 4 -->
                                     <div class="sub-menu__column">
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-2.1.svg"
                                                     alt=""
@@ -4705,7 +4709,7 @@
                                         </div>
 
                                         <div class="menu-column">
-                                            <div class="menu-column__icon">
+                                            <div class="menu-column__icon d-xl-none">
                                                 <img
                                                     src="./assets/img/category/cate-4.1.svg"
                                                     alt=""
@@ -4746,16 +4750,17 @@
                 </li>
             </ul>
         </nav>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
 
         <!-- Actions -->
         <div class="top-act">
-            <div class="top-act__group top-act__group--single">
+            <div class="top-act__group  d-md-none top-act__group--single">
                 <button class="top-act__btn">
                     <img src="./assets/icons/search.svg" alt="" class="icon top-act__icon" />
                 </button>
             </div>
 
-            <div class="top-act__group">
+            <div class="top-act__group  d-md-none">
                 <button class="top-act__btn">
                     <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
                     <span class="top-act__title">03</span>
