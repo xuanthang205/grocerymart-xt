@@ -5,11 +5,15 @@
 
     width: min(1240px, 100%);
 
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     transition: visibility 0.35s linear, opacity 0.35s linear;
 
     padding-top: 54px;
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        padding-top: 0;
+    }
 
     &__inner {
         --inner-padding: 30px;
@@ -29,6 +33,17 @@
 
             filter: var(--dropdown-arrow-color);
         }
+
+        @include abstracts.breakpoint(lg) {
+            padding: 0 40px;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+
+            &::before {
+                content: none;
+            }
+        }
     }
 }
 
@@ -44,6 +59,12 @@
 
         border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
+
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            height: auto;
+            border-right: none;
+        }
     }
 }
 
@@ -55,6 +76,10 @@
         margin-top: 30px;
     }
 
+    @include abstracts.breakpoint(lg) {
+        margin-top: 10px;
+    }
+
     &__icon {
         position: relative;
 
@@ -62,6 +87,14 @@
 
         width: 36px;
         height: 36px;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            display: block;
+        }
     }
 
     &__icon-1 {
@@ -91,19 +124,30 @@
         margin-top: 6px;
         font-weight: 500;
         line-height: 1.5;
+
+        @include abstracts.breakpoint(lg) {
+            margin-bottom: 26px;
+        }
     }
 
     &__list {
         margin-top: 19px;
+
+        @include abstracts.breakpoint(lg) {
+            margin-top: 0;
+        }
     }
 
     &__item {
-        &--active .sub-menu {
+        &--active .sub-menu, &--active{
             display: grid;
         }
 
         &:last-child > a {
             padding-bottom: 0;
+            @include abstracts.breakpoint(lg) {
+                padding-bottom: 7px;
+            }
         }
 
     }
@@ -113,8 +157,6 @@
         color: #0071DC;
         font-weight: 500;
     }
-
-
 
     &__link {
         display: block;
@@ -136,6 +178,12 @@
 
     overflow-y: auto;
 
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
     &--not-main {
         position: initial;
         inset: initial;
@@ -146,5 +194,10 @@
         padding-left: 0;
 
         height: var(--max-inner-height);
+
+        @include abstracts.breakpoint(lg) {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
     }
 }
