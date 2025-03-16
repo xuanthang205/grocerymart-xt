@@ -14,8 +14,17 @@ html {
     --sidebar-bg: #fff;
     --sidebar-shadow: rgba(200, 200, 200, 0.4);
 
+    // Cate item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
+    --cate-item--title: #000;
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.2);
+    }
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
     }
 }
