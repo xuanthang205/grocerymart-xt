@@ -5,29 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grocer Mart</title>
         <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="./assets/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="./assets/favicon/favicon.svg"
-        />
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
         <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/favicon/apple-touch-icon.png"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
         <!-- Fonts -->
-        <link
-            rel="stylesheet"
-            href="./assets/font/gordita-font/stylesheet.css"
-        />
+        <link rel="stylesheet" href="./assets/font/gordita-font/stylesheet.css" />
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
         <!-- Scripts -->
@@ -39,7 +23,27 @@
             load("#header", "./templates/header.html");
         </script>
         <div class="container">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur praesentium eum ipsum culpa minus sapiente asperiores aperiam fuga nulla vel unde repudiandae, accusantium nihil eos ratione natus dicta nobis?</h2>
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <div class="slideshow__item">
+                        <a href="#!" class="slideshow__link">
+                            <picture>
+                                <source
+                                    media="(max-width: 767.98px)"
+                                    srcset="./assets/img/slideshow/slideshow-1-mb.png"
+                                />
+                                <img src="./assets/img/slideshow/slideshow-1.png" alt="" class="slideshow__img" />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slideshow__page">
+                    <div class="slideshow__num">1</div>
+                    <div class="slideshow__slider"></div>
+                    <div class="slideshow__num">5</div>
+                </div>
+            </div>
+
             <footer id="footer"></footer>
             <script>
                 load("#footer", "./templates/footer.html");
