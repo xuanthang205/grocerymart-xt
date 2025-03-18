@@ -1215,6 +1215,13 @@ button {
   filter: var(--icon-color);
 }
 
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
 html {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(8%) sepia(11%) saturate(3088%) hue-rotate(210deg) brightness(100%)
@@ -1688,6 +1695,15 @@ html.dark {
   background: var(--like-btn-bg);
   box-shadow: 0px 20px 60px rgba(124, 124, 124, 0.2);
 }
+.like-btn:not(.like-btn--liked) .like-btn__icon-liked {
+  display: none;
+}
+.like-btn.like-btn--liked .like-btn__icon {
+  display: none;
+}
+.like-btn__icon-liked {
+  margin-top: 8px;
+}
 
 .product-card {
   padding: 16px;
@@ -1734,17 +1750,15 @@ html.dark {
   margin: 0 6px 0 auto;
 }
 
+.home {
+  padding-bottom: 39px;
+}
 .home__container {
   margin-top: 40px;
 }
 @media (max-width: 767.98px) {
   .home__container {
     margin-top: 30px;
-  }
-}
-@media (max-width: 575.98px) {
-  .home__container .row {
-    --grid-gutter-x: 40px;
   }
 }
 .home__heading {

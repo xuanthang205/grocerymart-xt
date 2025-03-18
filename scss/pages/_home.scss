@@ -1,16 +1,12 @@
 @use "../abstracts";
 .home {
+    padding-bottom: 39px;
+    
     &__container {
         margin-top: 40px;
 
         @include abstracts.screen(md) {
             margin-top: 30px;
-        }
-
-        & .row {
-            @include abstracts.screen(sm) {
-                --grid-gutter-x: 40px;
-            }
         }
     }
 
