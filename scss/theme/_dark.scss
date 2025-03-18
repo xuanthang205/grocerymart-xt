@@ -28,6 +28,16 @@ html.dark {
     --cate-item--title: #fff;
     --cate-item--desc: #fff;
 
+    // Buttons
+    --filter-btn-color: #fff;
+    --filter-btn-bg: #171C28;
+    --like-btn-bg: #292E39;
+
+    // Product card
+    --product-card-bg: #171C28;
+    --product-card-shadow: rgba(0, 0, 0, 0.20);
+    --product-card-title-color: #fff;
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
