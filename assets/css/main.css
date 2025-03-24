@@ -1206,6 +1206,10 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
+input {
+  background-color: transparent;
+}
+
 button {
   border: none;
   outline: none;
@@ -1290,6 +1294,10 @@ html.dark {
   --product-card-bg: #171C28;
   --product-card-shadow: rgba(0, 0, 0, 0.20);
   --product-card-title-color: #fff;
+  --filter-form-bg: var(--dropdown-bg-color);
+  --filter-form-shadow: rgba(0, 0, 0, 0.4);
+  --filter-form-tag-bg: #171C28;
+  --filter-form-arrow: var(--dropdown-arrow-color);
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -1728,6 +1736,7 @@ html.dark {
   font-weight: 400;
 }
 .btn--primary {
+  color: #1a162e;
   background-color: #FFB700;
 }
 .btn--outline {
@@ -1803,12 +1812,32 @@ html.dark {
   border-radius: 20px;
   background-color: var(--filter-form-bg);
   filter: drop-shadow(0px 40px 90px var(--filter-form-shadow));
+  transition: opacity, visibility;
+  transition-duration: 0.2s;
+}
+@media (max-width: 1199.98px) {
+  .filter {
+    height: calc(100vh - 80px);
+    padding-bottom: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+@media (max-width: 575.98px) {
+  .filter {
+    width: 85vw;
+  }
+}
+.filter.hide {
+  opacity: 0;
+  visibility: hidden;
 }
 .filter__arrow {
   position: absolute;
   right: 25px;
   top: -17px;
   width: 50.25px;
+  filter: var(--filter-form-arrow);
 }
 .filter__heading, .filter__form-label {
   font-size: 2.2rem;
@@ -1874,6 +1903,11 @@ html.dark {
   height: 36px;
   padding: 0 12px;
 }
+@media (max-width: 575.98px) {
+  .filter__form-text-input {
+    width: 100%;
+  }
+}
 .filter__form-text-input--small .filter__form-input {
   font-size: 1.4rem;
 }
@@ -1935,20 +1969,45 @@ html.dark {
   background: var(--Background-3, #eee);
   margin: 0 30px;
 }
+@media (max-width: 1199.98px) {
+  .filter__separate {
+    width: initial;
+    height: 1px;
+    margin: 30px 0;
+  }
+}
 .filter__footer {
   display: flex;
   justify-content: flex-end;
   margin-top: 32px;
 }
+@media (max-width: 1199.98px) {
+  .filter__footer {
+    position: sticky;
+    bottom: 0;
+    padding-bottom: 16px;
+    background-color: var(--filter-form-bg);
+  }
+}
 .filter__cancel, .filter__submit {
   height: 38px;
   padding: 0 10px;
+}
+@media (max-width: 575.98px) {
+  .filter__cancel, .filter__submit {
+    flex: 1;
+  }
 }
 .filter__cancel {
   font-size: 1.5rem;
 }
 .filter__submit {
   font-size: 1.4rem;
+}
+@media (max-width: 1199.98px) {
+  .filter__content {
+    flex-direction: column;
+  }
 }
 
 .home {
