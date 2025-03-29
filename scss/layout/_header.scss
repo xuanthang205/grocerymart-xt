@@ -28,6 +28,30 @@
         justify-content: space-between;
         padding: 16px;
     }
+
+    &__logo {
+        @include abstracts.screen(lg) {
+            column-gap: 10px;
+            margin-left: 40px;
+
+            &-title {
+                font-size: 1.8rem;
+                line-height: 144.444%;
+            }
+
+            &-img {
+                width: 24px;
+            }
+        }
+
+        @include abstracts.screen(md) {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 0;
+        }
+    }
 }
 
 .navbar {
