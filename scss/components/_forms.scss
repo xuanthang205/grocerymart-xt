@@ -71,7 +71,7 @@ $error-color: #ed4337;
         }
 
         &::placeholder {
-            color: #d2d1d6;
+            color: var(--form-placeholder-color);
         }
 
         &-icon {
@@ -150,7 +150,7 @@ $error-color: #ed4337;
             height: 6px;
             border-left: 3px solid;
             border-bottom: 3px solid;
-            border-color: #fff;
+            border-color: var(--auth-content-bg);
 
             rotate: -45deg;
 
@@ -164,6 +164,10 @@ $error-color: #ed4337;
         &::before {
             background-color: #ffb700;
             border-color: #ffb700;
+        }
+
+        &::after {
+            border-color: #fff;
         }
     }
 }

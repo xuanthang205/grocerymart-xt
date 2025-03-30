@@ -1268,6 +1268,7 @@ html {
   --filter-form-shadow: rgba(200, 200, 200, 0.4);
   --filter-form-tag-bg: #f8f8fb;
   --auth-content-bg: #fff;
+  --form-placeholder-color: #d2d1d6;
 }
 @media (max-width: 991.98px) {
   html {
@@ -1278,6 +1279,7 @@ html {
 @media (max-width: 767.98px) {
   html {
     --cate-item-bg: #fff;
+    --auth-intro-bg: #fff;
   }
 }
 
@@ -1313,6 +1315,11 @@ html.dark {
   --filter-form-shadow: rgba(0, 0, 0, 0.4);
   --filter-form-tag-bg: #171C28;
   --filter-form-arrow: var(--dropdown-arrow-color);
+  --auth-content-bg: #292E39;
+  --auth-intro-bg: #171C28;
+  --auth-intro-text-color: #B9BABE;
+  --auth-heading-color: #b9babe;
+  --form-placeholder-color: #b9babe;
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -2102,7 +2109,7 @@ html.dark {
   }
 }
 .form__input::placeholder {
-  color: #d2d1d6;
+  color: var(--form-placeholder-color);
 }
 .form__input-icon {
   margin-left: 12px;
@@ -2167,7 +2174,7 @@ html.dark {
   height: 6px;
   border-left: 3px solid;
   border-bottom: 3px solid;
-  border-color: #fff;
+  border-color: var(--auth-content-bg);
   rotate: -45deg;
 }
 @media (max-width: 767.98px) {
@@ -2178,6 +2185,9 @@ html.dark {
 .form__checkbox:has(:checked)::before {
   background-color: #ffb700;
   border-color: #ffb700;
+}
+.form__checkbox:has(:checked)::after {
+  border-color: #fff;
 }
 
 .home {
@@ -2247,7 +2257,7 @@ html.dark {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  background: #fafafd;
+  background-color: var(--auth-intro-bg, #fafafd);
 }
 .auth__intro-logo, .auth__intro-next {
   position: absolute;
@@ -2269,6 +2279,7 @@ html.dark {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 144.444%;
+  color: var(--auth-intro-text-color);
 }
 @media (max-width: 767.98px) {
   .auth__intro-text {
@@ -2299,11 +2310,22 @@ html.dark {
   padding: 50px 0;
   margin: 0 auto;
 }
+@media (max-width: 767.98px) {
+  .auth__content-inner {
+    padding: 32px 0;
+  }
+}
 .auth__heading {
   margin-top: 50px;
   font-size: 3rem;
   font-weight: 500;
   line-height: 146.667%;
+  color: var(--auth-heading-color);
+}
+@media (max-width: 767.98px) {
+  .auth__heading {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 767.98px) {
   .auth__heading {
@@ -2312,7 +2334,7 @@ html.dark {
   }
 }
 .auth__desc {
-  padding: 0 30px;
+  padding: 0 20px;
   margin-top: 10px;
   color: #9e9da8;
   font-size: 1.5rem;
@@ -2351,6 +2373,12 @@ html.dark {
   flex-direction: column;
   gap: 30px;
   margin-top: 50px;
+}
+@media (max-width: 767.98px) {
+  .auth__btn-group {
+    margin-top: 40px;
+    gap: 20px;
+  }
 }
 .auth__btn {
   width: 100%;
