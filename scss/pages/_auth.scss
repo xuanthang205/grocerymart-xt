@@ -40,6 +40,7 @@
         }
 
         &-img {
+            width: var(--width);
             max-width: 100%;
         }
 
@@ -130,6 +131,10 @@
         @include abstracts.screen(md) {
             margin-top: 10px;
         }
+
+        &-forgot {
+            margin-top: 10px;
+        }
     }
 
     &__link {
@@ -179,5 +184,9 @@
             font-size: inherit;
 
         }
+    }
+
+    &__message {
+        margin-top: 30px;
     }
 }
