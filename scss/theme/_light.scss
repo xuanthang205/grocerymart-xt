@@ -38,6 +38,13 @@ html {
     --auth-content-bg: #fff;
     --form-placeholder-color: #d2d1d6;
 
+    // Product detail
+    --product-detail-bg: #fff;
+
+    // Breadcrumbs detail
+    --breadcrumbs-bg: #f6f6f6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.2);
