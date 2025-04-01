@@ -19,45 +19,48 @@ html.dark {
     --sidebar-bg: #292e39;
     --sidebar-shadow: rgba(23, 28, 40, 0.4);
 
-    //Home 
+    //Home
     --home-heading-color: #fff;
 
     // Cate item
-    --cate-item-bg: #171C28;
-    --cate-item-thumb-bg: #292E39;
+    --cate-item-bg: #171c28;
+    --cate-item-thumb-bg: #292e39;
     --cate-item--title: #fff;
     --cate-item--desc: #fff;
 
     // Buttons
     --filter-btn-color: #fff;
-    --filter-btn-bg: #171C28;
-    --like-btn-bg: #292E39;
+    --filter-btn-bg: #171c28;
+    --like-btn-bg: #292e39;
 
     // Product card
-    --product-card-bg: #171C28;
-    --product-card-shadow: rgba(0, 0, 0, 0.20);
+    --product-card-bg: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
     --product-card-title-color: #fff;
 
     // Filter form
     --filter-form-bg: var(--dropdown-bg-color);
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
-    --filter-form-tag-bg: #171C28;
+    --filter-form-tag-bg: #171c28;
     --filter-form-arrow: var(--dropdown-arrow-color);
-    
+
     // Auth
-    --auth-content-bg: #292E39;
-    --auth-intro-bg: #171C28;
-    --auth-intro-text-color: #B9BABE;
+    --auth-content-bg: #292e39;
+    --auth-intro-bg: #171c28;
+    --auth-intro-text-color: #b9babe;
     --auth-heading-color: #b9babe;
     --form-placeholder-color: #b9babe;
 
     // Product detail
-    --product-detail-bg: #292E39;
+    --product-detail-bg: #292e39;
 
     // Breadcrumbs detail
-    --breadcrumbs-bg: #171C28;
-    --breadcrumbs-shadow: rgba(23, 28, 40, 0.20);
+    --breadcrumbs-bg: #171c28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
 
+    // Product info
+    --prod-info-bg: #171C28;
+    --prod-text-color: #eee;
 
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
