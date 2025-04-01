@@ -41,7 +41,7 @@ html.dark {
     // Filter form
     --filter-form-bg: var(--dropdown-bg-color);
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
-    --filter-form-tag-bg: #171c28;
+    --form-tag-bg: #171c28;
     --filter-form-arrow: var(--dropdown-arrow-color);
 
     // Auth
@@ -59,7 +59,8 @@ html.dark {
     --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
 
     // Product info
-    --prod-info-bg: #171C28;
+    --prod-info-bg: #171c28;
+    --prod-info-tag-bg: #292E39;
     --prod-text-color: #eee;
 
     @include abstracts.screen(lg) {
