@@ -2,6 +2,8 @@
 .product-page {
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 39px;
     background-color: var(--product-detail-bg);
 }
 
@@ -13,6 +15,10 @@
     @include abstracts.screen(lg) {
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 16px;
     }
 
     &__list {
@@ -81,12 +87,18 @@
     padding: 60px;
     background: var(--prod-info-bg);
 
+    @include abstracts.screen(xxl) {
+        padding: 40px;
+    }
+
     @include abstracts.screen(lg) {
         margin-top: 30px;
     }
 
-    @include abstracts.screen(xxl) {
-        padding: 40px;
+    @include abstracts.screen(md) {
+        padding: 0 16px 16px;
+        margin-top: 0;
+        border-radius: 0 0 20px 20px;
     }
 
     &__heading {
@@ -94,6 +106,12 @@
         font-size: 2.6rem;
         font-weight: 500;
         line-height: 138.462%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 144.444%;
+        }
     }
 
     &__label {
@@ -156,6 +174,11 @@
         border-radius: 6px;
         background-color: transparent;
     }
+
+    &-container {
+        border-radius: 20px;
+        background-color: #fff;
+    }
 }
 
 .prod-props {
@@ -163,6 +186,10 @@
 
     @include abstracts.screen(xxl) {
         padding-left: 10px;
+    }
+
+    @include abstracts.screen(lg) {
+        padding-left: 0;
     }
 }
 
@@ -172,6 +199,10 @@
     gap: 16px;
 
     margin-top: 30px;
+
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
 
     &__icon {
         align-self: flex-start;
