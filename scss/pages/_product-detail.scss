@@ -9,6 +9,10 @@
 
 .product-container {
     margin-top: 30px;
+
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
 }
 
 .prod-preview {
@@ -18,7 +22,7 @@
     }
 
     @include abstracts.screen(md) {
-        padding: 16px;
+        padding: 16px 16px 0;
     }
 
     &__list {
@@ -67,13 +71,13 @@
         border: 1.5px solid rgb(158, 157, 168, 0.3);
         border-radius: 8px;
         opacity: 0.9;
-        cursor: pointer;
         transition: opacity, border-color;
         transition-duration: 0.3s;
 
-        &:hover {
+        &:not(&--current):hover {
             opacity: 1;
             border-color: rgb(158, 157, 168);
+            cursor: pointer;
         }
 
         &--current {
@@ -85,7 +89,8 @@
 
 .prod-info {
     padding: 60px;
-    background: var(--prod-info-bg);
+    background: var(--prod-detail-info-bg);
+    border-radius: 10px;
 
     @include abstracts.screen(xxl) {
         padding: 40px;
@@ -96,13 +101,13 @@
     }
 
     @include abstracts.screen(md) {
-        padding: 0 16px 16px;
+        padding: 16px;
         margin-top: 0;
         border-radius: 0 0 20px 20px;
     }
 
     &__heading {
-        color: var(--prod-text-color);
+        color: var(--prod-info-text-color);
         font-size: 2.6rem;
         font-weight: 500;
         line-height: 138.462%;
@@ -135,7 +140,7 @@
     }
 
     &__price {
-        color: #000;
+        color: var(--prod-info-text-color);
         font-weight: 500;
         line-height: 150%;
     }
@@ -143,6 +148,7 @@
     &__tax {
         padding: 2px 8px;
         margin-left: 10px;
+        border-radius: 4px;
 
         color: #67b044;
         font-size: 1.4rem;
@@ -155,7 +161,7 @@
     &__total-price {
         margin: 20px 0;
 
-        color: #000;
+        color: var(--prod-info-text-color);
         font-size: 2.6rem;
         font-weight: 500;
         line-height: 138.462%;
@@ -177,7 +183,7 @@
 
     &-container {
         border-radius: 20px;
-        background-color: #fff;
+        background-color: var(--prod-info-container-bg);
     }
 }
 
@@ -200,16 +206,12 @@
 
     margin-top: 30px;
 
-    @include abstracts.screen(md) {
-        margin-top: 20px;
-    }
-
     &__icon {
         align-self: flex-start;
     }
 
     &__title {
-        color: var(--prod-text-color);
+        color: var(--prod-info-text-color);
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
@@ -217,7 +219,7 @@
 
     &__desc {
         margin-top: 4px;
-        color: var(--prod-text-color);
+        color: var(--prod-info-text-color);
         font-size: 1.4rem;
         line-height: 142.857%;
     }

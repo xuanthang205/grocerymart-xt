@@ -53,17 +53,24 @@ html.dark {
 
     // Product detail
     --product-detail-bg: #292e39;
+    --prod-detail-info-bg: #171c28;
+    --prod-info-tag-bg: #292e39;
+    --prod-info-text-color: #eee;
 
     // Breadcrumbs detail
     --breadcrumbs-bg: #171c28;
     --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
 
-    // Product info
-    --prod-info-bg: #171c28;
-    --prod-info-tag-bg: #292E39;
-    --prod-text-color: #eee;
+    // Search bar
+    --search-bar-bg: #171c28;
+    --search-bar-input-plahol-color: #b9babe;
 
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @include abstracts.screen(md) {
+        --prod-info-container-bg: #171c28;
+        --prod-detail-info-bg: transparent;
     }
 }
