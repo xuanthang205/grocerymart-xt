@@ -18,6 +18,10 @@ body {
     background-color: var(--body-bg);
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -35,7 +39,6 @@ textarea {
     padding: 0;
     border: none;
     outline: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
 input {
@@ -61,10 +64,12 @@ button {
     }
 }
 
-i, em {
+i,
+em {
     font-style: italic;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 600;
 }

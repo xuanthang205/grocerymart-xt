@@ -41,12 +41,12 @@ html {
     // Product detail
     --product-detail-bg: #fff;
     --prod-detail-info-bg: #f6f6f6;
-    --prod-info-tag-bg:#EDEDF6;
+    --prod-info-tag-bg: #ededf6;
 
     // Breadcrumbs detail
     --breadcrumbs-bg: #f6f6f6;
     --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
-    
+
     // Search bar
     --search-bar-bg: #fff;
     --search-bar-input-plahol-color: #9e9da8;
@@ -69,5 +69,6 @@ html {
         --product-detail-bg: #fafafd;
         --prod-info-container-bg: #fff;
         --prod-detail-info-bg: transparent;
+        --review-card-bg: #fff;
     }
 }

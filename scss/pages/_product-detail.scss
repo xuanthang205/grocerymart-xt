@@ -229,6 +229,10 @@
     &__list {
         display: flex;
         align-items: center;
+
+        @include abstracts.screen(md) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -238,6 +242,17 @@
         font-size: 2.2rem;
         font-weight: 500;
         line-height: 145.455%;
+        user-select: none;
+        white-space: nowrap;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+            padding: 8px 20px;
+        }
+
+        &:not(&--current) {
+            cursor: pointer;
+        }
 
         &:first-child {
             padding-left: 0;
