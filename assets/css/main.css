@@ -1176,7 +1176,7 @@ table {
 
 html {
   font-size: 62.5%;
-  --top-act-group-separate: #EDEDF6;
+  --top-act-group-separate: #ededf6;
 }
 
 body {
@@ -1226,6 +1226,14 @@ button {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+}
+
+i, em {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: 600;
 }
 
 @keyframes shake {
@@ -2324,6 +2332,64 @@ html.dark {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 144.444%;
+}
+
+.text-content {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6 {
+  font-weight: 600;
+}
+.text-content h1 {
+  font-size: 2.6rem;
+}
+.text-content h2 {
+  font-size: 2.2rem;
+}
+.text-content h3 {
+  font-size: 1.8rem;
+}
+.text-content h4 {
+  font-size: 1.6rem;
+}
+.text-content h5 {
+  font-size: 1.4rem;
+}
+.text-content h6 {
+  font-size: 1.2rem;
+}
+.text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6, .text-content p, .text-content blockquote, .text-content img, .text-content figure, .text-content ul, .text-content ol, .text-content table {
+  margin: 20px 0;
+}
+.text-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+.text-content img + em {
+  display: block;
+  font-style: italic;
+  text-align: center;
+}
+.text-content a {
+  color: #ffb700;
+  text-decoration: underline;
+}
+.text-content blockquote {
+  padding: 20px;
+  background: rgba(255, 183, 0, 0.1);
+  border-left: 3px solid #ffb700;
+}
+.text-content blockquote p {
+  margin: 0;
+}
+.text-content hr {
+  border: none;
+  height: 1px;
+  background: #ebebeb;
+  margin: 40px 0;
 }
 
 .home {
