@@ -358,6 +358,12 @@
         border-style: solid;
     }
 
+    &__separate {
+        height: 1px;
+        margin: 20px 0;
+        background-color: var(--header-act-dropdown-border-color);
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;
