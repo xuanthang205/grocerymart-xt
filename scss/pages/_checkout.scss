@@ -24,6 +24,10 @@
     border-radius: 20px;
     box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
 
+    & + & {
+        margin-top: 30px;
+    }
+
     &__list {
         margin-top: -30px;
     }
@@ -32,20 +36,65 @@
         margin-top: 30px;
     }
 
+    &__continue {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
-        
+        align-items: center;
+
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
+
+        & + & {
+            margin-top: 10px;
+        }
+
+        &--bold {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 145.455%;
+        }
     }
 
+    &__sub-label {
+        font-weight: 400;
+    }
 
-    &__continue-link {
-        display: flex;
-        align-items: center;
+    &__separate {
+        height: 1px;
+        margin: 30px 0;
+        background-color: #d2d1d6;
+    }
+
+    &__continue {
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+
+        &-icon {
+            rotate: 90deg;
+            transition: translate 0.2s ease-in-out;
+        }
+
+        &-link:hover &-icon {
+            translate: -5px;
+        }
+    }
+
+    &__next-btn {
+        margin-top: 30px;
     }
 }
 
@@ -140,5 +189,32 @@
         font-weight: 700;
         line-height: 145.455%;
         text-align: right;
+    }
+}
+
+.gift-item {
+    display: flex;
+    gap: 20px;
+
+    &__icon-wrap {
+        flex-shrink: 0;
+        width: 76px;
+        height: 76px;
+        padding: 10px;
+        border-radius: 14px;
+        background: rgb(118, 68, 225, 0.1);
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__desc {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        line-height: 142.857%;
     }
 }
