@@ -2961,11 +2961,21 @@ html.dark {
   border-radius: 20px;
   box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
 }
+@media (max-width: 767.98px) {
+  .cart-info {
+    padding: 16px;
+  }
+}
 .cart-info + .cart-info {
   margin-top: 30px;
 }
 .cart-info__list {
   margin-top: -30px;
+}
+@media (max-width: 767.98px) {
+  .cart-info__list {
+    margin-top: -16px;
+  }
 }
 .cart-info__bottom {
   margin-top: 30px;
@@ -3025,10 +3035,38 @@ html.dark {
   padding: 30px 0;
   border-bottom: 1px solid #d2d1d6;
 }
+@media (max-width: 767.98px) {
+  .cart-item {
+    align-items: initial;
+    padding: 16px 0;
+  }
+  .cart-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
 .cart-item__thumb {
   width: 175px;
   height: 172px;
   object-fit: contain;
+}
+@media (max-width: 1399.98px) {
+  .cart-item__thumb {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 991.98px) {
+  .cart-item__thumb {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .cart-item__thumb {
+    width: 60px;
+    height: 60px;
+  }
 }
 .cart-item__content {
   flex: 1;
@@ -3041,6 +3079,14 @@ html.dark {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .cart-item__content {
+    flex-direction: column;
+  }
+  .cart-item__content-right {
+    margin-top: 16px;
+  }
 }
 .cart-item__title {
   max-width: 374px;
@@ -3061,6 +3107,13 @@ html.dark {
 .cart-item__ctrl {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .cart-item__ctrl--md-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 .cart-item__ctrl-btn {
   display: flex;
@@ -3086,11 +3139,19 @@ html.dark {
   font-weight: 500;
   line-height: 146.667%;
 }
+.cart-item__input-btn {
+  display: flex;
+}
 .cart-item__total-price {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 145.455%;
   text-align: right;
+}
+@media (max-width: 767.98px) {
+  .cart-item__total-price {
+    text-align: left;
+  }
 }
 
 .gift-item {
