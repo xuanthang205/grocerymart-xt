@@ -1375,6 +1375,7 @@ html.dark {
   --checkout-cart-info-shadow: rgba(23, 28, 40, 0.2);
   --checkout-border-color: #292e39;
   --checkout-gift-shadow: rgba(23, 28, 40, 0.2);
+  --checkout-checkbox-color: var(--icon-color);
   --dialog-bg: #2f3441;
   --dialog-shadow: rgba(23, 28, 40, 0.4);
 }
@@ -1797,7 +1798,6 @@ html.dark {
 }
 .btn--small {
   height: 40px;
-  padding: 0 16px;
   font-size: 1.6rem;
 }
 .btn + .btn:not(.btn--no-margin) {
@@ -3268,6 +3268,18 @@ html.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .user-address__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767.98px) {
+  .user-address__btn {
+    height: 46px;
+  }
 }
 .user-address__title {
   font-size: 1.8rem;
@@ -3279,10 +3291,23 @@ html.dark {
   font-size: 1.5rem;
   line-height: 146.667%;
 }
+.user-address__message {
+  margin-top: 30px;
+  font-weight: 500;
+}
+.user-address__link {
+  color: #0071dc;
+}
 
 .address-card {
   display: flex;
   margin-top: 30px;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .address-card {
+    flex-direction: column;
+  }
 }
 .address-card__left {
   flex: 1;
@@ -3294,6 +3319,9 @@ html.dark {
   font-weight: 500;
   line-height: 144.444%;
 }
+.address-card__desc {
+  max-width: min(520px, 90%);
+}
 .address-card__list {
   display: flex;
   gap: 30px;
@@ -3301,6 +3329,13 @@ html.dark {
   font-size: 1.4rem;
   line-height: 142.857%;
   list-style: disc inside;
+}
+@media (max-width: 575.98px) {
+  .address-card__list {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -8px;
+  }
 }
 .address-card__list-item {
   margin-left: 8px;
@@ -3316,6 +3351,23 @@ html.dark {
   gap: 10px;
   font-size: 1.8rem;
   line-height: 144.444%;
+}
+@media (max-width: 767.98px) {
+  .address-card__ctrl-btn {
+    padding-left: 0;
+  }
+}
+.address-card__checkbox-input {
+  appearance: none;
+}
+.address-card__checkbox-input::before {
+  content: url("../icons/checkbox-uncheck.svg");
+}
+.address-card__checkbox-input:not(:checked)::before {
+  filter: var(--icon-color);
+}
+.address-card__checkbox-input:checked::before {
+  content: url("../icons/checkbox-checked.svg");
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
