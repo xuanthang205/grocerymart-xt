@@ -2113,9 +2113,6 @@ html.dark {
   border-radius: 10px;
   border: 1.5px solid #d2d1d6;
 }
-.form__text-area--small, .form__text-input--small {
-  border-radius: 8px;
-}
 .form__text-area:focus-within, .form__text-input:focus-within {
   border-color: #77dae6;
 }
@@ -2127,6 +2124,7 @@ html.dark {
   resize: none;
 }
 .form__text-input {
+  position: relative;
   height: 50px;
 }
 .form__text-input--small {
@@ -2136,6 +2134,57 @@ html.dark {
   .form__text-input {
     height: 48px;
   }
+}
+.form__select-dialog {
+  position: absolute;
+  left: 10px;
+  bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 8px;
+  min-width: 230px;
+  max-height: 310px;
+  padding: 10px 0px;
+  border: 1px solid #d2d1d6;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: opacity 0.2s linear, visibility 0.2s linear, translate 0.2s linear;
+}
+.form__select-dialog.show {
+  opacity: 1;
+  visibility: visible;
+  translate: 0 0;
+}
+.form__search {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #d2d1d6;
+}
+.form__search-input {
+  flex: 1;
+}
+.form__search-icon {
+  width: 16px;
+}
+.form__options-list {
+  flex: 1;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+.form__option {
+  padding: 8px 20px;
+  font-size: 1.4rem;
+}
+.form__option--current {
+  font-weight: 500;
+  background: rgba(255, 183, 0, 0.5);
+}
+.form__option:not(.form__option--current):hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
 }
 .form__input, .form__text-area-input {
   flex: 1;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -492,7 +492,7 @@
                         <div class="form__row">
                             <div class="form__group">
                                 <label for="name" class="form__label form__label--small">Name</label>
-                                <div class="form__text-input form__text-input--small">
+                                <div class="form__text-input">
                                     <input
                                         type="text"
                                         name="name"
@@ -509,7 +509,7 @@
 
                             <div class="form__group">
                                 <label for="phone" class="form__label form__label--small">Phone</label>
-                                <div class="form__text-input form__text-input--small">
+                                <div class="form__text-input">
                                     <input
                                         type="tel"
                                         name="phone"
@@ -527,7 +527,7 @@
 
                         <div class="form__group">
                             <label for="address" class="form__label form__label--small">Address</label>
-                            <div class="form__text-area form__text-area--small">
+                            <div class="form__text-area">
                                 <textarea
                                     name="address"
                                     id="address"
@@ -542,16 +542,41 @@
 
                         <div class="form__group">
                             <label for="city" class="form__label form__label--small">City/District/Town</label>
-                            <div class="form__text-input form__text-input--small">
+                            <div class="form__text-input">
                                 <input
                                     id="city"
                                     type="text"
                                     name=""
-                                    class="form__input"
+                                    class="form__input js-toggle"
+                                    toggle-target="#city-dialog"
                                     placeholder="City/District/Town"
                                     required
                                 />
                                 <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+
+                                <div id="city-dialog" class="form__select-dialog hide">
+                                    <div class="form__search">
+                                        <input type="text" text="" class="form__search-input" placeholder="Search" />
+                                        <img src="./assets/icons/search.svg" alt="" class="form__search-icon icon" />
+                                    </div>
+                                    <ul class="form__options-list">
+                                        <li class="form__option">City 1</li>
+                                        <li class="form__option form__option--current">City 2</li>
+                                        <li class="form__option">City 3</li>
+                                        <li class="form__option">City 4</li>
+                                        <li class="form__option">City 5</li>
+                                        <li class="form__option">City 6</li>
+                                        <li class="form__option">City 7</li>
+                                        <li class="form__option">City 8</li>
+                                        <li class="form__option">City 9</li>
+                                        <li class="form__option">City 10</li>
+                                        <li class="form__option">City 11</li>
+                                        <li class="form__option">City 12</li>
+                                        <li class="form__option">City 13</li>
+                                        <li class="form__option">City 14</li>
+                                        <li class="form__option">City 15</li>
+                                    </ul>
+                                </div>
                             </div>
                             <p class="form__error">Hehe</p>
                         </div>
