@@ -6,6 +6,15 @@ $error-color: #ed4337;
         pointer-events: none;
     }
 
+    &__row {
+        display: flex;
+        gap: 30px;
+
+        > * {
+            flex: 1;
+        }
+    }
+
     &__group {
         margin-top: 30px;
 
@@ -35,18 +44,18 @@ $error-color: #ed4337;
         }
     }
 
+    &__text-area,
     &__text-input {
         display: flex;
         align-items: center;
 
-        height: 50px;
         padding: 0 12px;
 
         border-radius: 10px;
         border: 1.5px solid #d2d1d6;
 
-        @include abstracts.screen(md) {
-            height: 48px;
+        &--small {
+            border-radius: 8px;
         }
 
         &:focus-within {
@@ -54,14 +63,34 @@ $error-color: #ed4337;
         }
     }
 
-    &__input {
-        --color: #77dae6;
-        flex: 1;
+    &__text-area {
+        padding: 12px;
+        height: 100px;
 
+        &-input {
+            width: 100%;
+            resize: none;
+        }
+    }
+
+    &__text-input {
+        height: 50px;
+
+        &--small {
+            height: 42px;
+        }
+
+        @include abstracts.screen(md) {
+            height: 48px;
+        }
+    }
+
+    &__input,
+    &__text-area-input {
+        flex: 1;
         height: 100%;
 
         font-size: 1.8rem;
-        font-style: normal;
         font-weight: 500;
         line-height: 144.444%;
 
@@ -69,10 +98,13 @@ $error-color: #ed4337;
             font-size: 1.6rem;
             line-height: 150%;
         }
-
         &::placeholder {
             color: var(--form-placeholder-color);
         }
+    }
+
+    &__input {
+        --color: #77dae6;
 
         &-icon {
             margin-left: 12px;
