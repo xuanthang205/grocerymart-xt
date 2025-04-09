@@ -54,7 +54,12 @@ html.dark {
     --auth-intro-bg: #171c28;
     --auth-intro-text-color: #b9babe;
     --auth-heading-color: #b9babe;
+
+    // Form
     --form-placeholder-color: #b9babe;
+    --form-select-dialog-shadow: rgba($color: #fff, $alpha: 0.15);
+    --form-select-dialog-bg: #2f3441;
+    --form-option-hover-bg: #292e39;
 
     // Product detail
     --product-detail-bg: #292e39;

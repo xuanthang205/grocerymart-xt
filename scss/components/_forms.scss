@@ -92,6 +92,7 @@ $error-color: #ed4337;
 
     &__select-dialog {
         position: absolute;
+        z-index: 1;
         left: 10px;
         bottom: 54px;
 
@@ -104,10 +105,11 @@ $error-color: #ed4337;
 
         min-width: 230px;
         max-height: 310px;
-        padding: 10px 0px;
+        padding-bottom: 10px;
         border: 1px solid #d2d1d6;
         border-radius: 10px;
-        background-color: #fff;
+        background-color: var(--form-select-dialog-bg);
+        box-shadow: 0 0 5px var(--form-select-dialog-shadow);
 
         transition: opacity 0.2s linear, visibility 0.2s linear, translate 0.2s linear;
 
@@ -116,27 +118,68 @@ $error-color: #ed4337;
             visibility: visible;
             translate: 0 0;
         }
+
+        @include abstracts.screen(sm) {
+            position: fixed;
+            inset: 0;
+            max-width: initial;
+            max-height: initial;
+            border-radius: 0;
+        }
+    }
+
+    &__dialog-heading {
+        padding: 14px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
     }
 
     &__search {
         display: flex;
+        flex-shrink: 0;
         align-items: center;
-        padding: 0 20px 10px;
+
+        height: 38px;
+        padding: 0 20px;
         border-bottom: 1px solid #d2d1d6;
 
         &-input {
             flex: 1;
+            height: 100%;
+            font-size: 1.6rem;
         }
 
         &-icon {
             width: 16px;
+            margin-left: 10px;
         }
+
+        @include abstracts.screen(lg) {
+            height: 42px;
+        }
+
+        @include abstracts.screen(sm) {
+            padding: 0 14px;
+            border: 1px solid #d2d1d6;
+            border-radius: 10px;
+            margin: 10px 20px 0;
+        }
+    }
+
+    &__close-dialog {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 2px 18px;
+        font-size: 3rem;
     }
 
     &__options-list {
         flex: 1;
         margin-top: 10px;
         overflow-y: auto;
+        overscroll-behavior: contain;
     }
 
     &__option {
@@ -145,12 +188,16 @@ $error-color: #ed4337;
 
         &--current {
             font-weight: 500;
-            background: rgba($color: #ffb700, $alpha: 0.5);
+            background: rgba($color: #ffb700, $alpha: 0.6);
         }
 
         &:not(&--current):hover {
-            background-color: #f5f5f5;
+            background-color: var(--form-option-hover-bg);
             cursor: pointer;
+        }
+
+        @include abstracts.screen(lg) {
+            padding: 14px 20px;
         }
     }
 

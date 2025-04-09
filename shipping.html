@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -77,7 +77,7 @@
                                             class="btn btn--small btn--primary btn--rounded user-address__btn js-toggle"
                                             toggle-target="#add-new-address"
                                         >
-                                            <img src="./assets/icons/plus.svg" alt="" class="icon" />
+                                            <img src="./assets/icons/plus.svg" alt="" />
                                             Add new address
                                         </button>
                                     </div>
@@ -555,6 +555,8 @@
                                 <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 
                                 <div id="city-dialog" class="form__select-dialog hide">
+                                    <h2 class="form__dialog-heading d-none d-sm-block">City/District/Town</h2>
+                                    <button class="form__close-dialog d-none d-sm-block js-toggle" toggle-target="#city-dialog">&times;</button>
                                     <div class="form__search">
                                         <input type="text" text="" class="form__search-input" placeholder="Search" />
                                         <img src="./assets/icons/search.svg" alt="" class="form__search-icon icon" />
