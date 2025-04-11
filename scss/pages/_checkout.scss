@@ -160,6 +160,16 @@
             }
         }
     }
+
+    &__desc {
+        margin-top: 6px;
+        font-size: 1.5rem;
+        line-height: 146.667%;
+    }
+
+    &__form {
+        margin-bottom: 30px;
+    }
 }
 
 .cart-item {
@@ -475,6 +485,10 @@
         align-items: center;
         flex-direction: row-reverse;
         gap: 14px;
+
+        &-input {
+            margin-top: 6px;
+        }
     }
 
     &-input:checked + &__cost {

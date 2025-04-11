@@ -2349,6 +2349,12 @@ html.dark {
   font-weight: 500;
   line-height: 145.455%;
 }
+.form__label--medium {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
 .form__label--small {
   margin-bottom: 10px;
   font-size: 1.4rem;
@@ -3322,6 +3328,14 @@ html.dark {
 .cart-info__checkbox-input:checked::before {
   content: url("../icons/checkbox-checked.svg");
 }
+.cart-info__desc {
+  margin-top: 6px;
+  font-size: 1.5rem;
+  line-height: 146.667%;
+}
+.cart-info__form {
+  margin-bottom: 30px;
+}
 
 .cart-item {
   display: flex;
@@ -3596,6 +3610,9 @@ html.dark {
   align-items: center;
   flex-direction: row-reverse;
   gap: 14px;
+}
+.payment-item__checkbox-input {
+  margin-top: 6px;
 }
 .payment-item-input:checked + .payment-item__cost {
   color: inherit;

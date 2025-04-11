@@ -105,37 +105,155 @@
                                 <h3 class="cart-info__sub-heading">Availeble Shipping method</h3>
                                 <!-- Payment item 3 -->
                                 <article class="payment-item">
-                                    <img src="./assets/img/payment/delivery-1.png" alt="" class="payment-item__thumb">
+                                    <img src="./assets/img/payment/delivery-1.png" alt="" class="payment-item__thumb" />
                                     <div class="payment-item__content">
                                         <h3 class="payment-item__title">Fedex Delivery</h3>
-                                        <p class="payment-item__desc payment-item__desc--low">Delivery: 2-3 days work</p>
+                                        <p class="payment-item__desc payment-item__desc--low">
+                                            Delivery: 2-3 days work
+                                        </p>
                                     </div>
                                     <div class="payment-item__cost-wrap">
                                         <label class="cart-info__checkbox payment-item__checkbox">
-                                            <input type="radio" name="delivery-method" class="cart-info__checkbox-input payment-item__checkbox-input" checked/>
+                                            <input
+                                                type="radio"
+                                                name="delivery-method"
+                                                class="cart-info__checkbox-input payment-item__checkbox-input"
+                                                checked
+                                            />
                                             <span class="payment-item__cost">Free</span>
                                         </label>
                                     </div>
                                 </article>
                                 <!-- Payment item 4 -->
                                 <article class="payment-item">
-                                    <img src="./assets/img/payment/delivery-2.png" alt="" class="payment-item__thumb">
+                                    <img src="./assets/img/payment/delivery-2.png" alt="" class="payment-item__thumb" />
                                     <div class="payment-item__content">
                                         <h3 class="payment-item__title">DHL Delivery</h3>
-                                        <p class="payment-item__desc payment-item__desc--low">Delivery: 2-3 days work</p>
+                                        <p class="payment-item__desc payment-item__desc--low">
+                                            Delivery: 2-3 days work
+                                        </p>
                                     </div>
                                     <div class="payment-item__cost-wrap">
                                         <label class="cart-info__checkbox payment-item__checkbox">
-                                            <input type="radio" name="delivery-method" class="cart-info__checkbox-input payment-item__checkbox-input" />
+                                            <input
+                                                type="radio"
+                                                name="delivery-method"
+                                                class="cart-info__checkbox-input payment-item__checkbox-input"
+                                            />
                                             <span class="payment-item__cost">$12.00</span>
                                         </label>
                                     </div>
                                 </article>
                             </div>
                         </div>
+
                         <div class="col-4 col-xl-12">
                             <div class="cart-info">
                                 <h2 class="cart-info__heading cart-info__heading--lv2">Payment Details</h2>
+                                <p class="cart-info__desc">
+                                    Complete your purchase item by providing your payment details order.
+                                </p>
+
+                                <form action="" class="form cart-info__form">
+                                    <div class="form__group">
+                                        <label for="email" class="form__label form__label--medium">Email Address</label>
+                                        <div class="form__text-input">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                class="form__input"
+                                                placeholder="Email"
+                                                required
+                                            />
+                                            <img
+                                                src="./assets/icons/form-error.svg"
+                                                alt=""
+                                                class="form__input-icon-error"
+                                            />
+                                        </div>
+                                        <p class="form__error">Mật khẩu thấp nhất 6 ký tự</p>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="card-holder" class="form__label form__label--medium">Card Holder</label>
+                                        <div class="form__text-input">
+                                            <input
+                                                type="text"
+                                                name="card-holder"
+                                                id="card-holder"
+                                                class="form__input"
+                                                placeholder="Card Holder"
+                                                required
+                                            />
+                                            <img
+                                                src="./assets/icons/form-error.svg"
+                                                alt=""
+                                                class="form__input-icon-error"
+                                            />
+                                        </div>
+                                        <p class="form__error">Mật khẩu thấp nhất 6 ký tự</p>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="card-details" class="form__label form__label--medium">Card Details</label>
+                                        <div class="form__text-input">
+                                            <input
+                                                type="text"
+                                                name="card-details"
+                                                id="card-details"
+                                                class="form__input"
+                                                placeholder="Card details"
+                                                required
+                                            />
+                                            <img
+                                                src="./assets/icons/form-error.svg"
+                                                alt=""
+                                                class="form__input-icon-error"
+                                            />
+                                        </div>
+                                        <p class="form__error">Mật khẩu thấp nhất 6 ký tự</p>
+                                    </div>
+
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    name="card-expire"
+                                                    id="card-expire"
+                                                    class="form__input"
+                                                    placeholder="MM/YY"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">Mật khẩu thấp nhất 6 ký tự</p>
+                                        </div>
+                                        <div class="form__group">
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    name="card-cvc"
+                                                    id="card-cvc"
+                                                    class="form__input"
+                                                    placeholder="CVC"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">Mật khẩu thấp nhất 6 ký tự</p>
+                                        </div>
+                                    </div>
+                                </form>
 
                                 <div class="cart-info__row">
                                     <span>Subtotal <span class="cart-info__sub-label">(items)</span></span>
@@ -160,7 +278,7 @@
                                 </div>
 
                                 <a href="#!" class="cart-info__next-btn btn btn--primary btn--rounded"
-                                    >Continue to checkout</a
+                                    >Pay $465.98</a
                                 >
                             </div>
                             <div class="cart-info">
