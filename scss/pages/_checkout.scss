@@ -32,6 +32,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 30px;
+
+        @include abstracts.screen(md) {
+            gap: 20px;
+        }
     }
 
     &__heading {
@@ -43,6 +48,12 @@
             font-size: 2.2rem;
             font-weight: 500;
             line-height: 145.455%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 150%;
+            }
         }
     }
 
@@ -51,10 +62,20 @@
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            line-height: 146.667%;
+        }
     }
 
     & + & {
         margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 20px;
+        }
     }
 
     &__list {
@@ -103,6 +124,10 @@
         height: 1px;
         margin: 30px 0;
         background-color: var(--checkout-border-color);
+
+        @include abstracts.screen(md) {
+            margin: 20px 0;
+        }
     }
 
     &__continue {
@@ -165,10 +190,22 @@
         margin-top: 6px;
         font-size: 1.5rem;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
     }
 
     &__form {
         margin-bottom: 30px;
+
+        &-row {
+            @include abstracts.screen(md) {
+                flex-direction: row;
+                column-gap: 16px;
+            }
+        }
     }
 }
 
@@ -440,28 +477,51 @@
 
 .payment-item {
     display: flex;
-    align-items: center;
     gap: 20px;
 
     padding: 20px;
     margin-top: 30px;
     border-radius: 20px;
-    background: #f6f6f6;
+    background: var(--checkout-payment-item-bg);
+
+    @include abstracts.screen(md) {
+        padding: 16px;
+        margin-top: 20px;
+    }
 
     &__content {
         flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__thumb {
         width: 70px;
         height: 54px;
         object-fit: cover;
+
+        @include abstracts.screen(md) {
+            width: 60px;
+            height: 46px;
+        }
     }
 
     &__title {
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+            line-height: 150%;
+        }
     }
 
     &__desc,
@@ -472,12 +532,19 @@
 
     &__desc {
         margin-top: 4px;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
     }
 
     &__detail {
+        display: flex;
+        align-items: center;
         padding: 8px;
-        margin-right: -8px;
         color: #0071dc;
+        margin: 0 -8px 0 auto;
     }
 
     &__checkbox {
