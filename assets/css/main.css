@@ -3386,6 +3386,9 @@ html.dark {
     column-gap: 16px;
   }
 }
+.cart-info__check-all {
+  margin: 30px 0;
+}
 
 .cart-item {
   display: flex;
@@ -3467,6 +3470,10 @@ html.dark {
 .cart-item__ctrl {
   display: flex;
   gap: 20px;
+}
+.cart-item__ctrl-wrap {
+  display: flex;
+  gap: 30px;
 }
 @media (max-width: 767.98px) {
   .cart-item__ctrl--md-block {
