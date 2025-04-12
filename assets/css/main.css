@@ -2925,7 +2925,8 @@ html.dark {
   }
 }
 .home__cate {
-  --grid-gutter-x: 51px;
+  padding-top: 30px;
+  --grid-gutter-x: 30px;
 }
 @media (max-width: 991.98px) {
   .home__cate {
