@@ -3420,9 +3420,16 @@ html.dark {
   }
 }
 .cart-info__heading {
+  display: flex;
+  align-items: center;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
+}
+@media (max-width: 767.98px) {
+  .cart-info__heading {
+    font-size: 1.6rem;
+  }
 }
 .cart-info__heading--lv2 {
   font-size: 2.2rem;
@@ -3435,6 +3442,12 @@ html.dark {
     font-weight: 500;
     line-height: 150%;
   }
+}
+.cart-info__back-arrow {
+  width: 50px;
+  padding-right: 20px;
+  position: relative;
+  top: 4px;
 }
 .cart-info__sub-heading {
   margin: 30px 0;
@@ -3995,6 +4008,12 @@ html.dark {
 }
 .profile__desc {
   margin-bottom: 16px;
+}
+
+.form-card__bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {

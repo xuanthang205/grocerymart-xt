@@ -40,9 +40,16 @@
     }
 
     &__heading {
+        display: flex;
+        align-items: center;
+
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 141.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
 
         &--lv2 {
             font-size: 2.2rem;
@@ -55,6 +62,13 @@
                 line-height: 150%;
             }
         }
+    }
+
+    &__back-arrow {
+        width: 50px;
+        padding-right: 20px;
+        position: relative;
+        top: 4px;
     }
 
     &__sub-heading {
