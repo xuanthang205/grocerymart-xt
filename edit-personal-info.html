@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Add new card | Grocery Mart</title>
+        <title>Edit Personal Info | Grocery Mart</title>
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
@@ -55,7 +55,7 @@
                                     <h3 class="profile-menu__title">Manage Account</h3>
                                     <ul class="profile-menu__list">
                                         <li>
-                                            <a href="./edit-personal-info.html" class="profile-menu__link">
+                                            <a href="#!" class="profile-menu__link">
                                                 <span class="profile-menu__icon">
                                                     <img src="./assets/icons/profile.svg" alt="" class="icon" />
                                                 </span>
@@ -165,20 +165,20 @@
                                             <a href="./profile.html">
                                                 <img src="./assets/icons/arrow-left.svg" alt="" class="icon cart-info__back-arrow">
                                             </a>
-                                            Add credit or debit card</h2>
+                                            Personal info</h2>
 
                                         <form action="./profile.html" class="form">
 
                                             <div class="form__row">
                                                 <div class="form__group">
-                                                    <label for="first-name" class="form__label form__label--medium">First Name</label>
+                                                    <label for="full-name" class="form__label form__label--medium">Full Name</label>
                                                     <div class="form__text-input">
                                                         <input
                                                             type="text"
                                                             name=""
-                                                            id="first-name"
+                                                            id="full-name"
                                                             class="form__input"
-                                                            placeholder="First Name"
+                                                            placeholder="Full Name"
                                                             required
                                                             autofocus
                                                             minlength="6"
@@ -193,16 +193,15 @@
                                                 </div>
 
                                                 <div class="form__group">
-                                                    <label for="last-name" class="form__label form__label--medium">Last Name</label>
+                                                    <label for="email-address" class="form__label form__label--medium">Email address</label>
                                                     <div class="form__text-input">
                                                         <input
-                                                            type="text"
+                                                            type="email"
                                                             name=""
-                                                            id="last-name"
+                                                            id="email-address"
                                                             class="form__input"
-                                                            placeholder="Last Name"
+                                                            placeholder="Email address"
                                                             required
-                                                            minlength="6"
                                                         />
                                                         <img
                                                             src="./assets/icons/form-error.svg"
@@ -210,76 +209,11 @@
                                                             class="form__input-icon-error"
                                                         />
                                                     </div>
-                                                    <p class="form__error">Ten thấp nhất 6 ký tự</p>
+                                                    <p class="form__error">Mail error</p>
                                                 </div>
                                             </div>
 
                                             <div class="form__row">
-                                                <div class="form__group">
-                                                    <label for="card-number" class="form__label form__label--medium">Card Number</label>
-                                                    <div class="form__text-input">
-                                                        <input
-                                                            type="text"
-                                                            name=""
-                                                            id="card-number"
-                                                            class="form__input"
-                                                            placeholder="Card Number"
-                                                            required
-                                                            minlength="6"
-                                                        />
-                                                        <img
-                                                            src="./assets/icons/form-error.svg"
-                                                            alt=""
-                                                            class="form__input-icon-error"
-                                                        />
-                                                    </div>
-                                                    <p class="form__error">Ten thấp nhất 6 ký tự</p>
-                                                </div>
-
-                                                <div class="form__group">
-                                                    <label for="expiration-date" class="form__label form__label--medium">Expiration Date</label>
-                                                    <div class="form__text-input">
-                                                        <input
-                                                            type="text"
-                                                            name=""
-                                                            id="expiration-date"
-                                                            class="form__input"
-                                                            placeholder="MM/YY"
-                                                            required
-                                                            minlength="6"
-                                                        />
-                                                        <img
-                                                            src="./assets/icons/form-error.svg"
-                                                            alt=""
-                                                            class="form__input-icon-error"
-                                                        />
-                                                    </div>
-                                                    <p class="form__error">Ten thấp nhất 6 ký tự</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="form__row">
-                                                <div class="form__group">
-                                                    <label for="cvv" class="form__label form__label--medium">CVV</label>
-                                                    <div class="form__text-input">
-                                                        <input
-                                                            type="text"
-                                                            name=""
-                                                            id="cvv"
-                                                            class="form__input"
-                                                            placeholder="123"
-                                                            required
-                                                            minlength="6"
-                                                        />
-                                                        <img
-                                                            src="./assets/icons/form-error.svg"
-                                                            alt=""
-                                                            class="form__input-icon-error"
-                                                        />
-                                                    </div>
-                                                    <p class="form__error">Ten thấp nhất 6 ký tự</p>
-                                                </div>
-
                                                 <div class="form__group">
                                                     <label for="phone-number" class="form__label form__label--medium">Phone Number</label>
                                                     <div class="form__text-input">
@@ -288,7 +222,7 @@
                                                             name=""
                                                             id="phone-number"
                                                             class="form__input"
-                                                            placeholder="(+084)"
+                                                            placeholder="Phone Number"
                                                             required
                                                             minlength="10"
                                                         />
@@ -298,21 +232,34 @@
                                                             class="form__input-icon-error"
                                                         />
                                                     </div>
+                                                    <p class="form__error">SDT min 10 character</p>
+                                                </div>
+
+                                                <div class="form__group">
+                                                    <label for="password" class="form__label form__label--medium">Password</label>
+                                                    <div class="form__text-input">
+                                                        <input
+                                                            type="password"
+                                                            name=""
+                                                            id="password"
+                                                            class="form__input"
+                                                            placeholder="Password"
+                                                            required
+                                                            minlength="6"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/form-error.svg"
+                                                            alt=""
+                                                            class="form__input-icon-error"
+                                                        />
+                                                    </div>
                                                     <p class="form__error">Ten thấp nhất 6 ký tự</p>
                                                 </div>
                                             </div>
 
-                                            <div class="form__group">
-                                                <label for="set-default-card" class="form__label form__label--medium">Card Preferences</label>
-                                                <label class="form__checkbox">
-                                                    <input type="checkbox" name="" id="set-default-card" class="form__checkbox-input d-none">
-                                                    <span class="form__checkbox-label">Set as default card</span>    
-                                                </label>
-                                            </div>
-
                                             <div class="form-card__bottom">
                                                 <a href="./profile.html" class="btn btn--text">Cancel</a>
-                                                <button class="btn btn--primary btn--rounded">Save card</button>
+                                                <button class="btn btn--primary btn--rounded">Save</button>
                                             </div>
                                         </form>
                                     </div>
